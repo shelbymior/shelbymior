@@ -90,10 +90,10 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-flex-basis: 45%;
+flex-basis: 60%;
 }
 .about-col-1 img{
-    width: 45%;
+    width: 35%;
     border-radius: 15px;
     margin-left: -40px;
     margin-top: 60px;
