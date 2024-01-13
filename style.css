@@ -101,7 +101,7 @@ flex-basis: 60%;
 }
 
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 100%;
     margin-left: 400px;
     margin-top: -360px;
     position: relative;
