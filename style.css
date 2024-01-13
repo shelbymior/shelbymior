@@ -90,10 +90,10 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-flex-basis: 60%;
+flex-basis: 50%;
 }
 .about-col-1 img{
-    width: 35%;
+    width: 45%;
     border-radius: 15px;
     margin-left: -40px;
     margin-top: 60px;
@@ -101,9 +101,9 @@ flex-basis: 60%;
 }
 
 .about-col-2{
-    flex-basis: 100%;
+    flex-basis: 80%;
     margin-left: 400px;
-    margin-top: -360px;
+    margin-top: -375px;
     position: relative;
 }
 
@@ -169,7 +169,7 @@ flex-basis: 60%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .project{
