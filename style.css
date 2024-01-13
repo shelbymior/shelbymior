@@ -81,7 +81,7 @@ nav ul li a:hover::after{
 
 /* --------about------ */
 #about {
-    padding: 100px, 0;
+    padding: 200px, 0;
     color: ababab;
 }
 .row{
@@ -95,12 +95,13 @@ flex-basis: 35%;
 .about-col-1 img{
     width: 50%;
     border-radius: 15px;
-    margin-left: -50px;
+    margin-left: -40px;
     margin-top: 70px;
+    
 }
 
 .about-col-2{
-    flex-basis: 65%;
+    flex-basis: 60%;
     margin-left: 300px;
     margin-top: -350px;
     position: relative;
