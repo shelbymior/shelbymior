@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Shelby Mior</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "images/logo (1).png" class = "logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Shelby<span> Mior</span><br></h1>
+                <p>BESc - Mechanical Engineering</p>
+            </div>
+        </div>
+    </div>  
+
+    <!-------------about--------------->
+
+   <div id="about">
+        <div class ="container">
+            <div class = "row">
+                <div class = "about-col-1">
+                    <img src="images/work.jpg">
+                </div>
+                <div class = "about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p><br>Hi, I'm Shelby! I've always been curious about how stuff works, which led me to pursue a degree in Mechanical Engineering. 
+                    <br><br> I love creating things (some of my projects featured here) and I'm passionate about learning something new every day. 
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>Mechanical Engineering</span><br>Mechanical Design and Analysis, Testing and Validation, Prototyping, CAD</li>
+                            <li><span>Electromechanical Systems</span><br>System Integration, Sensors and Actuators, Robotic Systems</li>
+                            <li><span>Project Management</span><br>Project Planning, Budget Management, Risk Assessment, Technical Documentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><span>July 2024 - Present</span><br>Kelson Mechanical - Junior Project Manager</li>
+                            <li><span>May 2023 - August 2023</span><br>Lux Aerobot - Mechatronics Intern</li>
+                            <li><span>May 2022 - February 2023</span><br>SpaceRyde - Mechatronics Intern</li>
+                            <li><span>May 2021 - March 2022 </span><br>The Dynamic and Sensing Systems Lab at Western University - Research Assistant</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id ="education">
+                        <ul>
+                            <li><span>April 2024 </span><br>Bachelor of Engineering Science, Mechanical Engineering<br> Western University</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------projects--------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class = "sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src = "images/car.jpg">
+                    <div class="layer">
+                        <h3>Alouette<br><br>September 2023</h3>
+                        <p>Collaboration with Brandon Vickerd for The Life Cycle of Celestial Objects, Pts. 1 & 2 art exhibition at McIntosh Gallery.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link" style="color: #74C0FC;"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src = "images/pcb.jpg">
+                    <div class="layer">
+                        <h3>VHF/UHF Radio Development Board <br><br>January 2023</h3>
+                        <p> PCB design for Western Engineering Satellite Team's communication subsystem. Features two AX5043 transceivers and an STM32 MCU.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link" style="color: #74C0FC;"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src = "images/mechatron.jpg">
+                    <div class="layer">
+                        <h3>Semi-Autonomous Scavenger Robot<br><br>December 2023</h3>
+                        <p>Remote controlled robot capable of autonomously sorting and collecting objects. Features ESP32 MCUs, differential drive, a waterwheel collection mechanism, and colour sensors.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link" style="color: #74C0FC;"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="projects.html"class="btn">See more</a>
+        </div>
+    </div>
+
+
+<!------contact----------------->
+<div id="contact"> 
+    <div class="container">
+      <h1 class = "sub-title">
+        <i class="fa-solid fa-rocket"></i>
+       Contact Me 
+             <a href="https://linkedin.com/in/shelbymior/" target="_blank">
+                   <i class="fa-brands fa-linkedin"></i>
+                    </a>
+        </h1>
+          
+                <form name = "submit-to-google-sheet" class = "contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name = "email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+    </div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script src="https://kit.fontawesome.com/fa2347f329.js" crossorigin="anonymous">
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzE_NFwebwQYmjDlaCxf2Mi_AamxnJGy0femkLynmDy7ZIouVnPmA5zb5Q1Ofd9mLMO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent. Thank you!"
+                setTimeout(function(){
+                msg.innerHTML =""
+            },5000) 
+                     form.reset()
+                })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
